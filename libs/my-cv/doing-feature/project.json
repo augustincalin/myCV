@@ -1,0 +1,43 @@
+{
+  "projectType": "library",
+  "root": "libs/my-cv/doing-feature",
+  "sourceRoot": "libs/my-cv/doing-feature/src",
+  "prefix": "me",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/my-cv/doing-feature"],
+      "options": {
+        "project": "libs/my-cv/doing-feature/ng-package.json",
+        "tailwindConfig": "libs/my-cv/doing-feature/tailwind.config.js"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/my-cv/doing-feature/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/my-cv/doing-feature/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/my-cv/doing-feature"],
+      "options": {
+        "jestConfig": "libs/my-cv/doing-feature/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/my-cv/doing-feature/src/**/*.ts",
+          "libs/my-cv/doing-feature/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,7 +1,9 @@
 {
   "version": 2,
   "projects": {
+    "model": "libs/model",
     "my-cv": "apps/my-cv",
+    "my-cv-doing-feature": "libs/my-cv/doing-feature",
     "my-cv-e2e": "apps/my-cv-e2e"
   }
 }

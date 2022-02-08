@@ -1,4 +1,10 @@
-import { getGreeting } from '../support/app.po';
+import {
+  getAddTodoButton,
+  getGreeting,
+  getTodos,
+  whatsNextButton,
+  whatsNextButton,
+} from '../support/app.po';
 
 describe('my-cv', () => {
   beforeEach(() => cy.visit('/'));
@@ -10,4 +16,14 @@ describe('my-cv', () => {
     // Function helper example, see `../support/app.po.ts` file
     getGreeting().contains('Welcome my-cv');
   });
+
+  it.only('should display whats next button', () => {
+    whatsNextButton().should((t) => expect(t.length).equal(1));
+  });
+
+  // it('should display todos', () => {
+  //   getTodos().should((t) => expect(t.length).equal(2));
+  //   getAddTodoButton().click();
+  //   getTodos().should((t) => expect(t.length).equal(3));
+  // });
 });

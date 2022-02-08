@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@me/model": ["libs/model/src/index.ts"],
+      "@me/my-cv/doing-feature": ["libs/my-cv/doing-feature/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
