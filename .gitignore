@@ -1,41 +1,41 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/tmp
-/out-tsc
+/me.ui/dist
+/me.ui/tmp
+/me.ui/out-tsc
 
 # dependencies
-/node_modules
+/me.ui/node_modules
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+/me.ui/.idea
+/me.ui/.project
+/me.ui/.classpath
+/me.ui/.c9/
+/me.ui/*.launch
+/me.ui/.settings/
+/me.ui/*.sublime-workspace
 
 # IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+/me.ui/.vscode/*
+!/me.ui/.vscode/settings.json
+!/me.ui/.vscode/tasks.json
+!/me.ui/.vscode/launch.json
+!/me.ui/.vscode/extensions.json
 
 # misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+/me.ui/.sass-cache
+/me.ui/connect.lock
+/me.ui/coverage
+/me.ui/libpeerconnection.log
+/me.ui/npm-debug.log
+/me.ui/yarn-error.log
+/me.ui/testem.log
+/me.ui/typings
 
 # System Files
 .DS_Store
 Thumbs.db
 
-.angular
+/me.ui/.angular
